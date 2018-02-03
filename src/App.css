@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'OpenSans';
+  src:  url('./fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Light';
+  src:  url('./fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src:  url('./fonts/OpenSans-Semibold.ttf');
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.title > span {
+  font-size: 20px;
+  font-family: 'OpenSans-Light';
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.business-container {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.business-tile {
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  max-width: 240px;
+  text-decoration: none;
+  color: #000;
+  min-height: 325px;
+  margin-bottom: 20px;
+}
+
+.business-image {
+  width: 240px;
+  height: 180px;
+  display: block;
+  background-color: #b7b7b7;
+}
+
+.business-category {
+  width: 100px;
+  border: 1px solid #838383;
+  margin: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.business-category > span {
+  padding: 4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: OpenSans;
+}
+
+.business-name {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.business-name > span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: OpenSans;
+}
+
+.business-description > span {
+  font-size: 10px;
+  font-family: OpenSans;
+  text-align: justify;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.review-container {
+  position: absolute;
+  top: 140px;
+  right: -39px;
+  background-color: #155bf7;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-45deg);
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.review-container > span {
+  color: #FFF;
+  display: inline-block;
+  transform: rotate(45deg);
+  font-family: 'OpenSans-Semibold';
+}
